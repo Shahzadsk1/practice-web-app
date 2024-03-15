@@ -1,0 +1,58 @@
+.main-container {
+  height: calc(-4rem + 100dvh);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.join-now,
+.explore {
+  margin: 5px;
+  padding: 0.5rem;
+  width: 8rem;
+
+  border-style: none;
+  border-radius: 0.5rem;
+
+  background-color: var(--main);
+  color: var(--dark-bg);
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.join-now {
+  border: 2px solid var(--main);
+}
+
+.explore {
+  border: 2px solid var(--main);
+
+  background-color: var(--dark-bg);
+
+  color: var(--text);
+}
+
+.join-now:hover {
+  border-color: var(--white);
+
+  font-weight: 600;
+}
+
+.explore:hover {
+  border-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .welcome-img {
+    max-width: 100%;
+    max-width: 100%;
+  }
+  .buttons {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
